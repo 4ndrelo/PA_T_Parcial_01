@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::string nombre = "Alland González";
+    std::string nombre = "Alland González" "Jorge Barrera" "Guillermo Contreras";
     int numerocarnet = 1233022;
     std::cout << "Nombre: " << nombre << std::endl;
     std::cout << "Número de carnet: " << numerocarnet << std::endl;
