@@ -5,7 +5,12 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::string nombre = "Alland González";
+    int numerocarnet = 1233022;
+    std::cout << "Nombre: " << nombre << std::endl;
+    std::cout << "Número de carnet: " << numerocarnet << std::endl;
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
