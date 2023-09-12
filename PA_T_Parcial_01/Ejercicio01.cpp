@@ -10,5 +10,23 @@ char Ejercicio01::lower(char c)
 
 bool Ejercicio01::isPalindrome(const char* phrase, int length)
 {
-    return false;
+    if (phrase == nullptr || length <= 0)
+        return false; // No es una frase válida
+
+    int left = 0;
+    int right = length - 1;
+
+    while (left < right)
+    {
+        char leftChar = lower(phrase[left]);
+        char rightChar = lower(phrase[right]);
+
+        if (leftChar != rightChar)
+            return false; // No es un palíndromo
+
+        left++;
+        right--;
+    }
+
+    return true; // Es un palíndromo
 }
